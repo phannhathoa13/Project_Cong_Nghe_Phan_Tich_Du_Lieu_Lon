@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/Users/HoaFan/Documents/GitHub/Project_Cong_Nghe_Phan_Tich_Du_Lieu_Lon/Nhom10_NewYork_City_Taxi_Trip _Duration/.venv/bin/python" "$0" "$@"
+' '''
+import sys
+from kafka.cli import run_cli
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(run_cli())

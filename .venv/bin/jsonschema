@@ -1,0 +1,6 @@
+#!/Users/HoaFan/Documents/GitHub/Project_Cong_Nghe_Phan_Tich_Du_Lieu_Lon/.venv/bin/python
+import sys
+from jsonschema.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
